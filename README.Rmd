@@ -41,7 +41,7 @@ kr_init(repo_dir)
 
 # Create a test post
 test_file <- tempfile(fileext = ".Rmd")
-kr_create(test_file)
+kr_create(test_file, repo = repo_dir)
 
 # Create a test post
 kr_add(test_file, path = "examples/test_post", repo = repo_dir)
